@@ -14,6 +14,8 @@ var userSchema = new Schema({
     email: String,
     password: String,
     googleId: String,
+    searchTerm: String,
+    searchLocation: String,
     stops: [{type: mongoose.Schema.Types.ObjectId, ref: "Stop"}],
     comments: [commentSchema]
 });
